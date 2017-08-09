@@ -1267,6 +1267,12 @@ textarea:focus {
     padding-bottom: 30px;
 }
 
+.experience-block  h4{
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+
 .experience-block .icon {
     display: block;
     width: 78px;
