@@ -271,6 +271,23 @@ h3.small-margin-bottom {
     margin-bottom: 12px;
 }
 
+.button-readmore {
+    margin-top: 48px;
+    margin-bottom: 22px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 11px 20px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.button-readmore.purple {
+    border-color: #ff9800;
+    color: #fff; }
+
+
 @media all and (max-width: 1024px) {
     .button-row .button {
         display: block;
@@ -1467,8 +1484,8 @@ textarea:focus {
    ========================================================================== */
 
 .education {
-    padding: 132px 0;
-    margin: 72px 0;
+    padding: 112px 0;
+    margin: 122px 0;
 }
 
 .education .line {
@@ -1541,7 +1558,7 @@ textarea:focus {
 
 .education .item:nth-child(even) .content {
     top: auto;
-    bottom: -132px;
+    bottom: -200px;
 }
 
 .education .item .content:after {
@@ -1570,17 +1587,85 @@ textarea:focus {
     bottom: auto;
 }
 
+
 .education .item .content span {
     font-size: 13px;
-    line-height: 26px;
-    margin-bottom: 12px;
+    line-height: 10px;
+    margin-bottom: 3px;
     text-transform: uppercase;
 }
 
 .education .item .content h4 {
-    line-height: 26px;
+    line-height: 20px;
     margin-bottom: 0;
 }
+
+.education .item .content h5 {
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+/* content master template*/
+.education .item .contentmaster {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+    position: absolute;
+    top: -190px;
+    left: 0;
+    right: 0;
+    margin: 0 12px;
+}
+
+.education .item:nth-child(even) .contentmaster {
+    top: auto;
+    bottom: -212px;
+}
+
+.education .item .contentmaster:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 0 0 18px;
+    border-color: transparent transparent transparent #fff;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -9px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.education .item:nth-child(even) .contentmaster:after {
+    border-width: 0 18px 18px 0;
+    border-color: transparent #fff transparent transparent;
+    box-shadow: none;
+    position: absolute;
+    top: -9px;
+    bottom: auto;
+}
+
+
+
+.education .item .contentmaster span {
+    font-size: 13px;
+    line-height: 12px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.education .item .contentmaster h4 {
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+
+/*end of content master*/
+
+
 
 .education .item .year {
     font-size: 16px;
@@ -1597,6 +1682,35 @@ textarea:focus {
     top: -44px;
     bottom: auto;
 }
+
+.education .courseboxlayout {
+    margin-top: 250px;
+}
+
+.education .coursebox {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: relative;
+    padding: 20px 30px;
+    float: left;
+    margin-top: 19px;
+}
+
+.education .courseboxlayout .coursebox h4{
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+.education .courseboxlayout .coursebox h5 {
+    line-height: 10px;
+    margin-bottom: 0px;
+}
+.education .courseboxlayout .coursebox span {
+    margin-bottom: 20px;
+
+}
+
 
 @media all and (max-width: 768px) {
     .education {
